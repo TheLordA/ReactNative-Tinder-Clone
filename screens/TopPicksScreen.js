@@ -1,7 +1,6 @@
 import React from "react";
 import { ScrollView, StyleSheet, View, SafeAreaView } from "react-native";
 import { Text, Tile } from "react-native-elements";
-//import { SafeAreaView } from "react-navigation";
 import { TopPicksScreenPics } from "../constants/Pics";
 
 class TopPicksScreen extends React.Component {
@@ -18,7 +17,9 @@ class TopPicksScreen extends React.Component {
 					<View style={styles.grid}>
 						{TopPicksScreenPics.map(({ pic, title, caption }, i) => (
 							<Tile
+								containerStyle={styles.containerTile}
 								imageSrc={pic}
+								imageContainerStyle={styles.containerTileImage}
 								activeOpacity={0.9}
 								title={title}
 								titleStyle={styles.title}
@@ -64,6 +65,15 @@ const styles = StyleSheet.create({
 		backgroundColor: "black",
 		marginTop: 10,
 		padding: 10,
+	},
+	containerTile: {
+		marginBottom: 15,
+		paddingRight: 15,
+		paddingLeft: 15,
+		borderRadius: 15,
+	},
+	containerTileImage: {
+		borderRadius: 12,
 	},
 });
 

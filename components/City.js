@@ -8,7 +8,7 @@ const City = () => {
 	return (
 		<TouchableOpacity style={styles.city}>
 			<Text style={styles.cityText}>
-				<Icon name="marker" /> New York
+				<Icon name="marker" /> City Name
 			</Text>
 		</TouchableOpacity>
 	);
