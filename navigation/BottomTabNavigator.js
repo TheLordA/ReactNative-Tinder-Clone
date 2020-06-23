@@ -6,6 +6,7 @@ import HomeScreen from "../screens/HomeScreen";
 import MessagesScreen from "../screens/MessagesScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 import TopPicksScreen from "../screens/TopPicksScreen";
+import Matches from "../screens/MatchesScreen.js";
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = "Home";
@@ -32,6 +33,20 @@ export default function BottomTabNavigator({ navigation, route }) {
 					title: "Top Picks",
 					tabBarIcon: ({ focused }) => (
 						<TabBarIcon focused={focused} type="FontAwesome" name="diamond" />
+					),
+				}}
+			/>
+			<BottomTab.Screen
+				name="Matches"
+				component={Matches}
+				options={{
+					title: "Matches",
+					tabBarIcon: ({ focused }) => (
+						<TabBarIcon
+							focused={focused}
+							type="MaterialCommunityIcons"
+							name="heart-multiple-outline"
+						/>
 					),
 				}}
 			/>

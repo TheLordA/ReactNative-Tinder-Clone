@@ -24,7 +24,7 @@ export default StyleSheet.create({
 	// COMPONENT - CARD ITEM
 	containerCardItem: {
 		backgroundColor: WHITE,
-		height: DIMENSION_HEIGHT - 130,
+		//height: DIMENSION_HEIGHT - 130,
 		borderRadius: 8,
 		alignItems: "center",
 		margin: 10,
@@ -74,7 +74,7 @@ export default StyleSheet.create({
 	actionsCardItem: {
 		flexDirection: "row",
 		alignItems: "center",
-		paddingVertical: 30,
+		paddingVertical: 10,
 	},
 	button: {
 		width: 60,

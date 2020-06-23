@@ -7,13 +7,13 @@ import Icon from "./Icon";
 const CardItem = ({ actions, description, image, matches, name, onPressLeft, onPressRight, status, variant }) => {
 	// Custom styling
 	const fullWidth = Dimensions.get("window").width;
+	const fullHeight = Dimensions.get("window").height;
 
 	const imageStyle = [
 		{
 			borderRadius: 8,
 			width: variant ? fullWidth / 2 - 30 : fullWidth - 80,
-			//height: variant ? 170 : 350,
-			height: variant ? 170 : 450,
+			height: variant ? 170 : fullHeight - 365,
 			margin: variant ? 0 : 20,
 		},
 	];
